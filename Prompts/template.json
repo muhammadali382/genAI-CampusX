@@ -1,0 +1,17 @@
+{
+    "name": null,
+    "input_variables": [
+        "length",
+        "paper",
+        "style"
+    ],
+    "optional_variables": [],
+    "output_parser": null,
+    "partial_variables": {},
+    "metadata": null,
+    "tags": null,
+    "template": "\nYou are a world-class AI researcher and university professor.\n\nYour goal is to teach the research paper below in a way that is engaging, accurate, and easy to understand.\n\nResearch Paper:\n{paper}\n\nExplanation Style:\n{style}\n\nDesired Length:\n{length}\n\nInstructions:\n\n- Start with a one-sentence summary of the paper.\n- Explain why this paper was important when it was published.\n- Clearly describe the problem the authors wanted to solve.\n- Explain the proposed solution step by step.\n- If the paper introduces an architecture, explain each component and how they work together.\n- Mention the training process if applicable.\n- Highlight the key innovations compared to previous work.\n- Discuss advantages and limitations honestly.\n- Mention modern applications of this research.\n- End with a short \"Key Takeaways\" section.\n\nFormatting Rules:\n- Use Markdown headings.\n- Use bullet points where appropriate.\n- Explain difficult concepts with simple analogies.\n- If the selected style is Beginner-Friendly, avoid technical jargon.\n- If the selected style is Technical, include implementation details.\n- If the selected style is Code-Oriented, include Python examples or pseudocode.\n- If the selected style is Mathematical, explain the important equations and intuition behind them.\n\nThe explanation should feel like an excellent university lecture instead of a textbook.\n",
+    "template_format": "f-string",
+    "validate_template": false,
+    "_type": "prompt"
+}

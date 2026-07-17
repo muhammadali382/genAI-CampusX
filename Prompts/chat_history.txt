@@ -1,0 +1,2 @@
+HumanMessage(content="I want to request a refund for my order 12345.")
+AIMessage(content="Your refund request for order 12345 has been received and is being processed. You will receive a confirmation email once the refund is completed.")
