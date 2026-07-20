@@ -1,9 +1,8 @@
 from langchain_huggingface import ChatHuggingFace, HuggingFaceEndpoint
 from dotenv import load_dotenv
-import os
 from langchain_core.prompts import PromptTemplate
 from langchain_core.output_parsers import StrOutputParser
-
+import os
 load_dotenv()
 
 llm = HuggingFaceEndpoint(
@@ -14,21 +13,19 @@ llm = HuggingFaceEndpoint(
 
 model = ChatHuggingFace(llm=llm)
 
-# 1st prompt -> Detailed report
-template1 = PromptTemplate(
-    template='Write a detailed report on {topic}',
+prompt = PromptTemplate(
+    template='Generate 5 interesting facts about {topic}',
     input_variables=['topic']
 )
 
-# 2nd prompt -> 5 Line Summary
-template2 = PromptTemplate(
-    template='Write a 5 line summary on teh following text. /n {text}',
-    input_variables=['text']
-)
-
 parser = StrOutputParser()
-chain = template1 | model | parser | template2 | model | parser
 
-result = chain.invoke({'topic': 'black hole'})
+chain = prompt | model | parser
+result = chain.invoke({'topic': 'ohio'})
 
 print(result)
+
+chain.get_graph().print_ascii()
+
+
+
