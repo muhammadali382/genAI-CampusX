@@ -1,0 +1,93 @@
+Intro to Deep Learning
+
+Deep Learning - Deep Learning is a subset of Machine Learning that uses
+neural networks with multiple layers. - Neural Networks are the
+foundation of Deep Learning. - It became popular because it can solve
+complex problems that were previously difficult or impossible.
+
+Applications - Color Restoration: Converts grayscale images into color
+using CNNs. - Speech Enactment: Synchronizes audio with lip movements
+using RNNs. - Handwriting Generation: Produces realistic handwriting in
+different styles using RNNs. - Machine Translation: Automatically
+translates text and images. - Sound Generation: Adds suitable sounds to
+silent videos. - Image Tasks: Object classification and object
+detection. - Other Applications: Self-driving cars, chatbots, and
+text-to-image generation.
+
+Exam Keywords - CNN → Image-related tasks. - RNN → Sequential data such
+as speech and handwriting.
+
+Must Remember - Neural Networks are the foundation of Deep Learning. -
+CNNs are mainly used for image-related tasks. - RNNs are mainly used for
+sequential data. - Deep Learning powers modern AI applications.
+
+==================================================
+
+Artificial Neural Networks (ANNs)
+
+Overview - Artificial Neural Networks (ANNs) are inspired by biological
+neurons in the human brain.
+
+Biological Neuron Components - Soma (Cell Body): Processes information
+and contains the nucleus. - Dendrites: Receive inputs from other
+neurons. - Axon: Sends processed output to other neurons. - Synapse
+(Terminal Buttons): Connects one neuron to another.
+
+Information Flow Dendrites → Soma → Axon → Synapse → Next Neuron
+
+Learning in the Brain - Frequently used neural connections become
+stronger over time.
+
+Artificial Neuron - Mimics a biological neuron by receiving inputs,
+processing them, and producing an output.
+
+Exam Keywords - Soma = Processing - Dendrites = Input - Axon = Output -
+Synapse = Connection
+
+Must Remember - Dendrites receive inputs. - Soma processes
+information. - Axon sends outputs. - ANNs imitate biological neurons.
+
+==================================================
+
+ANN – Forward Propagation
+
+Artificial Neuron (Perceptron) - The perceptron is the basic building
+block of an ANN. - It receives inputs and produces an output.
+
+Perceptron Working - Computes the weighted sum of inputs plus bias. -
+Applies an activation function to generate the output.
+
+Neural Network Layers - Input Layer: Receives data. - Hidden Layer(s):
+Process data. - Output Layer: Produces predictions.
+
+Main Concepts - Forward Propagation - Backpropagation - Activation
+Functions
+
+Forward Propagation Input → Hidden Layer(s) → Output Layer
+
+Inputs and Parameters - Inputs: x₁, x₂, … - Weights: w₁, w₂, … - Bias: b
+
+Linear Combination z = (inputs × weights) + bias or z = wx + b
+
+Neuron Output a = Activation(z)
+
+Activation Function - Converts z into a nonlinear output. - Determines
+whether a neuron is activated.
+
+Sigmoid Function - Large positive z → Output ≈ 1 - Large negative z →
+Output ≈ 0
+
+Importance of Activation Functions - Without an activation function, a
+neural network behaves like linear regression. - Activation functions
+enable neural networks to learn complex patterns.
+
+Multiple Neurons - The output of one neuron becomes the input to the
+next.
+
+Exam Keywords - Perceptron - Input Layer - Hidden Layer - Output Layer -
+Forward Propagation - Weights - Bias - z - a - Sigmoid
+
+Must Remember - Perceptron = Artificial Neuron. - z = wx + b - a =
+Activation(z) - Forward Propagation: Input → Hidden → Output. -
+Activation functions introduce nonlinearity. - Without activation
+functions, a neural network is equivalent to linear regression.

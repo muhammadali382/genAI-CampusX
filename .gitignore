@@ -17,3 +17,6 @@ __pycache__/
 
 # macOS/Linux
 .DS_Store
+
+# Others Folder
+Others/
