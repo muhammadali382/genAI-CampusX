@@ -20,3 +20,4 @@ __pycache__/
 
 # Others Folder
 Others/
+RAG/Vector_Store/my_chroma_db/
